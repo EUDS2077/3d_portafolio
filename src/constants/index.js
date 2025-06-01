@@ -1,3 +1,4 @@
+// Importación de imágenes/icónos desde la carpeta assets
 import {
   mobile,
   backend,
@@ -25,21 +26,24 @@ import {
   threejs,
 } from "../assets";
 
+// =================== MENÚ DE NAVEGACIÓN ===================
 export const navLinks = [
   {
-    id: "about",
+    id: "about",   // Ancla para sección "Acerca de"
     title: "Acerca de",
   },
   {
-    id: "work",
+    id: "work",    // Ancla para sección "Trabajar"
     title: "Trabajar",
   },
   {
-    id: "contact",
+    id: "contact", // Ancla para sección "Contacto"
     title: "Contacto",
   },
 ];
 
+// =================== SERVICIOS ===================
+// Tarjetas que se muestran en la sección "About"
 const services = [
   {
     title: "Desarrollador web",
@@ -59,61 +63,26 @@ const services = [
   },
 ];
 
+// =================== TECNOLOGÍAS ===================
+// Tecnologías para sección "Tech" (íconos animados)
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  { name: "HTML 5", icon: html },
+  { name: "CSS 3", icon: css },
+  { name: "JavaScript", icon: javascript },
+  { name: "TypeScript", icon: typescript },
+  { name: "React JS", icon: reactjs },
+  { name: "Redux Toolkit", icon: redux },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Node JS", icon: nodejs },
+  { name: "MongoDB", icon: mongodb },
+  { name: "Three JS", icon: threejs },
+  { name: "git", icon: git },
+  { name: "figma", icon: figma },
+  { name: "docker", icon: docker },
 ];
 
+// =================== EXPERIENCIAS ===================
+// Línea de tiempo con trabajos anteriores (sección "Experience")
 const experiences = [
   {
     title: "Desarrollador React",
@@ -123,9 +92,9 @@ const experiences = [
     date: "Marzo de 2020 - abril de 2021",
     points: [
       "Desarrollo y mantenimiento de aplicaciones web utilizando React.js y otras tecnologías relacionadas.",
-      "Colaborar con equipos multifuncionales que incluyen diseñadores, gerentes de producto y otros desarrolladores para crear productos de alta calidad.",
-      "Implementar un diseño responsivo y garantizar la compatibilidad entre navegadores.",
-      "Participar en revisiones de código y brindar comentarios constructivos a otros desarrolladores.",
+      "Colaboración con equipos multifuncionales.",
+      "Diseño responsivo y compatibilidad entre navegadores.",
+      "Revisiones de código y retroalimentación.",
     ],
   },
   {
@@ -135,10 +104,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Enero de 2021 - Febrero de 2022",
     points: [
-      "Desarrollo y mantenimiento de aplicaciones web utilizando React.js y otras tecnologías relacionadas.",
-      "Colaborar con equipos multifuncionales que incluyen diseñadores, gerentes de producto y otros desarrolladores para crear productos de alta calidad.",
-      "Implementar un diseño responsivo y garantizar la compatibilidad entre navegadores.",
-      "Participar en revisiones de código y brindar comentarios constructivos a otros desarrolladores.",
+      "Desarrollo de aplicaciones móviles nativas.",
+      "Trabajo colaborativo con el equipo de diseño y desarrollo.",
+      "Optimización del rendimiento en dispositivos móviles.",
+      "Revisión de código y mejoras iterativas.",
     ],
   },
   {
@@ -148,27 +117,29 @@ const experiences = [
     iconBg: "#383E56",
     date: "Enero de 2022 - Enero de 2023",
     points: [
-      "Desarrollo y mantenimiento de aplicaciones web utilizando React.js y otras tecnologías relacionadas.",
-      "Colaborar con equipos multifuncionales que incluyen diseñadores, gerentes de producto y otros desarrolladores para crear productos de alta calidad.",
-      "Implementar un diseño responsivo y garantizar la compatibilidad entre navegadores.",
-      "Participar en revisiones de código y brindar comentarios constructivos a otros desarrolladores.",
+      "Desarrollo de interfaces web para ecommerce.",
+      "Colaboración en diseño UI/UX.",
+      "Optimización para dispositivos móviles.",
+      "Entrega continua y mejoras semanales.",
     ],
   },
   {
-    title: "Full stack Developer",
+    title: "Desarrollador full stack",
     company_name: "Meta",
     icon: meta,
     iconBg: "#E6DEDD",
     date: "Enero de 2023 - Presente",
     points: [
-      "Desarrollo y mantenimiento de aplicaciones web utilizando React.js y otras tecnologías relacionadas.",
-      "Colaborar con equipos multifuncionales que incluyen diseñadores, gerentes de producto y otros desarrolladores para crear productos de alta calidad.",
-      "Implementar un diseño responsivo y garantizar la compatibilidad entre navegadores.",
-      "Participar en revisiones de código y brindar comentarios constructivos a otros desarrolladores.",
+      "Desarrollo fullstack con React y Node.",
+      "Integración con bases de datos y APIs.",
+      "Arquitectura escalable y mantenimiento continuo.",
+      "Participación activa en la planificación de productos.",
     ],
   },
 ];
 
+// =================== TESTIMONIOS ===================
+// Opiniones de clientes o compañeros de trabajo
 const testimonials = [
   {
     testimonial:
@@ -180,7 +151,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "Nunca he conocido a un desarrollador web que realmente se preocupe por el éxito de sus clientes como el  lo hace.",
+      "Nunca he conocido a un desarrollador web que realmente se preocupe por el éxito de sus clientes como él lo hace.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -196,24 +167,17 @@ const testimonials = [
   },
 ];
 
+// =================== PROYECTOS ===================
+// Proyectos destacados para mostrar en la sección "Works"
 const projects = [
   {
     name: "Alquiler de coches",
     description:
-      "Plataforma basada en web que permite a los usuarios buscar, reservar y administrar alquileres de automóviles de varios proveedores, proporcionando una solución conveniente y eficiente para las necesidades de transporte.",
+      "Plataforma para buscar, reservar y gestionar alquileres de autos con múltiples proveedores.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "mongodb", color: "green-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
     ],
     image: carrent,
     source_code_link: "https://github.com/",
@@ -221,20 +185,11 @@ const projects = [
   {
     name: "Trabajo de ti",
     description:
-      "Aplicación web que permite a los usuarios buscar ofertas de empleo, ver rangos salariales estimados para los puestos y localizar trabajos disponibles según su ubicación actual.",
+      "Web app para buscar empleos, ver sueldos estimados y filtrar por ubicación.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "restapi", color: "green-text-gradient" },
+      { name: "scss", color: "pink-text-gradient" },
     ],
     image: jobit,
     source_code_link: "https://github.com/",
@@ -242,24 +197,17 @@ const projects = [
   {
     name: "Guía de viaje",
     description:
-      "Una plataforma integral de reserva de viajes que permite a los usuarios reservar vuelos, hoteles y coches de alquiler, y ofrece recomendaciones seleccionadas para destinos populares.",
+      "App para reservar vuelos, hoteles y autos, con recomendaciones de destinos populares.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "supabase", color: "green-text-gradient" },
+      { name: "css", color: "pink-text-gradient" },
     ],
     image: tripguide,
     source_code_link: "https://github.com/",
   },
 ];
 
+// =================== EXPORTACIÓN ===================
+// Exporta los arreglos para ser usados en componentes como About, Tech, Experience, etc.
 export { services, technologies, experiences, testimonials, projects };
